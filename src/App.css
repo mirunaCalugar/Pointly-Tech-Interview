@@ -1,0 +1,155 @@
+/* App.css */
+
+/* Stilizare globală */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #257e8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centrăm aplicația pe ecran folosind flexbox */
+.app {
+  max-width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #a1cbd1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Stilizare pentru conținutul de pe pagina principală */
+.home-container {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logout-btn {
+  background-color: #053940;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+/* Stilizare pentru zona de upload */
+.file-upload {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  background-color: #709ba1;
+  transition: background-color 0.3s ease;
+}
+
+.dropzone:hover {
+  background-color: #f0f0f0;
+}
+
+.file-list {
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.file-name {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: #053940;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+}
+
+/* Stiluri pentru pagina de login */
+.login-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  background-color: #053940;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+
+  .file-upload {
+    margin-top: 20px;
+  }
+}
